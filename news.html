@@ -1,85 +1,332 @@
-<!DOCTYPE html>
+<!doctype html>
+<!--ny4rlk0 v 2.0 12.08.2023 19:07-->
+<!--"If you want a happy ending, it depends on where you stop reading your story."-->
 <html>
 <head>
- <link rel="icon" href="https://raw.githubusercontent.com/neptune1881/n3ptun3.github.io/main/favicon.ico">
-  <!--<meta http-equiv='cache-control' content='no-cache'>
-  <meta http-equiv='expires' content='0'>
-  <meta http-equiv='pragma' content='no-cache'>-->
-  <title>News</title>
-  <link rel="stylesheet" href="stylenya.css">
-  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css">
-    <style type="text/css">    
-  body {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #FB527E;
-  background-color: rgba(0,0,0,0.7)}
-  .buton{background-image: url(https://raw.githubusercontent.com/neptune1881/n3ptun3.github.io/main/pink_button.png);  width:auto; height:auto; border: 0;}
-  .side{float: center;text-align: center;}
-  .center-block {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  }
-  li.var_nav{float:none;}
-  div {
-  text-align:center;
-  width:100%;
-  height:100%;
-  }
-  h1 {text-align: center;
-    font-family: Helvetica, Geneva, Arial,
-          SunSans-Regular, sans-serif }
-  h6 {text-align: center;
-    font-family: Helvetica, Geneva, Arial,
-          SunSans-Regular, sans-serif }
-  a:link {
-    color: white }
-  a:visited {
-    color: white }
-  html { 
-    background: url(https://raw.githubusercontent.com/neptune1881/n3ptun3.github.io/main/background_finale_pink.png) no-repeat center center fixed;; 
+<meta charset="utf-8">
+<link rel="icon" href="https://raw.githubusercontent.com/neptune1881/n3ptun3.github.io/main/favicon.ico">
+<title>Anime News</title>
+	<style type="text/css">
+ /*Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #000000 #710038;
+}
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+  width: 8px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #710038;
+}
+*::-webkit-scrollbar-track:hover {
+  background-color: #710038;
+}
+*::-webkit-scrollbar-track:active {
+  background-color: #710038;
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+  background-color: #000000;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #000000;
+}
+*::-webkit-scrollbar-thumb:active {
+  background-color: #000000;
+}	
+</style>
+<style type="text/css">
+	
+li {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+float : left;
+margin:0px;
+padding : 0px; /* this will be applied internally, due to
+box-sizing property */
+text-align:center;
+overflow: hidden;
+/*margin-left:-1%;
+padding-top:-1%;*/
+
+}
+li:nth-child(100n) { 
+   clear : left;
+	
+}
+	.yatay_Liste_flex{
+		display:inline-flex;
+		gap: 5px; 
+		/*overflow:auto;
+		overflow-y:hidden;*/
+		white-space: nowrap;
+		margin-top:-2vw;
+		margin-left:-1vw;
+		/*overflow-x: scroll;*/
+	}
+.logo{
+	font-size: 200px;
+	line-height: 300px;
+	font-weight: bold;
+	text-transform: lowercase;
+	background: url("Eyes.jpg");
+	-webkit-background-clip: border-box;
+	-webkit-text-fill-color: transparent;
+	-webkit-mask-image: url("Eyes.jpg");
+	mask-image: url("Eyes.jpeg");
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+
+	background-size: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+	.logo_kutu {
+		/*Sonradan*/
+  display:flex;
+  flex-wrap:flex;
+  order:1;
+  position: relative;
+  text-align: center;
+  color: rgba(255,255,255,0.8);
+  font-size:15vw;
+  margin-top:5%;
+  left:0%;
+  display:inline-block;
+	
+
+}
+	.logo_tamOrtala {
+  position: absolute;
+  margin-top: -15%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+
+}
+	  html { 
+    background: url(Arkaplan.png) no-repeat right center fixed;; 
     -webkit-background-size:cover;
     -moz-background-size:cover;
     -o-background-size:cover;
     background-size:cover;
     background-repeat:no-repeat;
-    background-position:center;}
-    
-  </style>
-
+    backgro0nd-position:relative;
+	margin:0;
+	padding:0;
+	width:100%;
+	height:92%;
+	overflow-y:hidden;
+	overflow-x:auto;
+	}
+	
+	 body {
+	font-family: "Georgia", "Times New Roman", "Times New Roman";
+	color: #FB527E;
+	background-color: rgba(0,0,0,0.7);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	
+	height: 100%;
+	width: 96%;
+	position: relative;
+	margin-top:1vw;
+	marign-left:0vw;
+	margin-right:0vw;
+	padding-right:2vw;
+	padding-left:0vw;
+	padding-top:0vw;
+	background-size: cover;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+	bottom:0vw;
+	top:0vw;
+	right:0vw;
+	left:0vw;
+	overflow:hidden;
+	border-radius:20px;padding:1px;border:4px solid #000000;
+	overflow-x:hidden;
+	overflow-y:auto;
+		 
+	}
+	.alt_Bilgi {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #0F0000;
+  text-align: center;
+  padding: 5px 0;
+  display:inline-block;
+}
+	.kaykayAnimasyonu{
+		/*white-space: nowrap;
+  		overflow: hidden;
+  		display: inline-block;*/
+		animation: kaykayAnimasyonu 30s linear infinite;
+	}
+	@keyframes kaykayAnimasyonu {
+  	0% {transform: translate3d(70%, 0, 0);}
+  	100% {transform: translate3d(-70%, 0, 0);}
+	}
+	.alt_Menu {
+  position:absolute;
+  left: 5vw;
+  top: 42vw;
+  width: 89%;
+  height: 11vw;
+  white-space: nowrap; /* önemli bu scrollu duzeltti*/
+  background-color: rgba(255,0,4,0.50);
+  text-align: center;
+  /*padding: 2% 0% -10% 0%;*/
+  display:inline-block;
+  border-radius:10px;padding:0px;border:4px solid #000000;
+		/*Because*/
+  overflow-x:auto;
+  overflow-y:hidden;
+}
+	.alt_Menu_MiniKutu {
+		display:inline-flex;
+  width: 15vw;
+  height: 20%;
+  flex: 0 0 10px;
+  align-items:flex-start;
+  font-size: 2.3vw;
+  justify-content: center;
+  text-align: center;
+  margin-right: 1px;
+  margin-top: 4vw;
+  background-color: rgba(66,0,47,0.85);
+  border-radius: 15px;
+  padding-top: 1vw;
+  padding-bottom:2vw;
+  padding-left: -1vw;
+  padding-right: 0vw;
+  border: 2px solid #000000;
+  overflow:hidden;
+}
+	a{
+		color:#FFFFFF;
+		text-decoration:none;
+		text-align:center;
+	}
+</style>
+<!--<link rel="stylesheet" href="style.css">-->
 </head>
 
 <body>
-
-<!-- Site navigation menu -->
-<nav>
-    <UL>
-     <li class="var_nav">
-        <div class="link_bg"></div>
-        <div class="link_title">
-          <div class=icon> 
-          <i class="icon-home icon-2x"></i>
-          </div>
-          <a href="en.html"><span>Home</span></a>
-        </div>
-      </li>
-    </UL>
-  </nav>
-<!-- Main content -->
-    <p><h1 class="ana_icerik" style="color:red; font-size:24pt;"></h1>
-    <p><h1 class="ana_icerik" style="color:red; font-size:24pt;">『nyarlko』News ~desu!</h1>
-      <div style="border: 3px solid rgb(201, 0, 1); overflow: hidden; margin: 1px auto; max-width: 1300px;">
-        <iframe src="https://animecorner.me/category/news/anime-news/" scrolling="yes" style="border: 0px none; margin-left: -1px; height: 1300px; margin-top: -35px; margin-bottom: -300px; width: 1300px;">
+	<!--<div class="logo"><img src="EyesAI.jpeg" style="width:800px;height:300px;"></div>-->
+	<!--<p class="logo">nyarlko</p>-->
+	<div class="logo_kutu">
+	<a href="nyarlko.com/tr.html"><img src="Eyes.jpg" alt="NYARLKO LOGO" style="width:70%;border-radius:0px;padding:0px;border:4px solid #000000;opacity:0.5;"></a>
+		<div class="logo_tamOrtala">nyarlko</div>
+	</div>
+	<!--
+	<form action="https://www.google.com/search" method="get">
+	<input style="display:inline-block;rows:1;border-radius:5vw;padding:1vw;border:4px solid #000000;background-color: rgba(255,30,128,0.30);margin-top:5.5vw;height:10vw;width:85vw;font-size:3vw;text-align:center;" placeholder="Ufufufufu, sizin için ne aramalıyım ~efendim ?" class="logo_tamOrtala" autocomplete="off" spellcheck="false" autocapitalize="off" autocorrect="off" expanded="false" type="text" name="q">
+	</form>
+	
+	<div class="alt_Menu">
+		<ul class="yatay_Liste_flex">
+			<li>
+			<div class="alt_Menu_MiniKutu"><a href="https://www.crunchyroll.com/">Crunchyroll</a></div>
+			</li>
+			<li>
+			<div class="alt_Menu_MiniKutu"><a href="https://www.turkanime.co/">Turkanime</a></div>
+			</li>
+			<li>
+			<div class="alt_Menu_MiniKutu"><a href="https://anizm.net/">Anizm</a></div>
+			</li>
+			<li>
+			<div class="alt_Menu_MiniKutu"><a href="https://animecix.net/">AnimeCix</a></div>
+			</li>
+			<li>
+			<div class="alt_Menu_MiniKutu"><a href="https://mangaokutr.com/">MangaOku</a></div>
+			</li>
+			<li>
+			<div class="alt_Menu_MiniKutu"><a href="https://www.tranimeizle.co/">TRAnimeİzle</a></div>
+			</li>
+			<li>
+			<div class="alt_Menu_MiniKutu"><a href="https://asyaanimeleri.com/">AsyaAnimeleri</a></div>
+			</li>
+			<li>
+			<div class="alt_Menu_MiniKutu"><a href="https://animeizletr.com/">AnimeİzleTR</a></div>
+			</li>
+			<li>
+			<div class="alt_Menu_MiniKutu"><a href="https://www.ruyamanga.com/">RüyaManga</a></div>
+			</li>
+			<li>
+			<div class="alt_Menu_MiniKutu"><a href="https://uzaymanga.com/">UzayManga</a></div>
+			</li>
+			<li>
+			<div class="alt_Menu_MiniKutu"><a href="https://www.mangazure.com/">MangaZure</a></div>
+			</li>
+			<li>
+			<div class="alt_Menu_MiniKutu"><a href="https://myanimelist.net/">MyAnimeList</a></div>
+			</li>
+			<li>
+			<div class="alt_Menu_MiniKutu"><a href="https://nyaa.si/">Animeİndir</a></div>
+			</li>
+			<li>
+			<div class="alt_Menu_MiniKutu"><a href="https://www.animeindir.co/">AnimeİndirCo</a></div>
+			</li>
+			<li>
+			<div class="alt_Menu_MiniKutu"><a href="https://theindex.moe/">Site Durumu</a></div>
+			</li>
+			<li>
+			<div class="alt_Menu_MiniKutu"><a href="https://www.nyarlko.com/sohbet.html">Sohbet</a></div>
+			</li>
+			<li>
+			<div class="alt_Menu_MiniKutu"><a href="https://www.reddit.com/r/Animemes/">r/Animemes</a></div>
+			</li>
+			<li>
+			<div class="alt_Menu_MiniKutu"><a href="https://www.reddit.com/r/goodanimemes/">r/GoodAniMemes</a></div>
+			</li>
+			<li>
+			<div class="alt_Menu_MiniKutu"><a href="https://boards.4channel.org/a/">4chan/a/</a></div>
+			</li>
+			<li>
+			<div class="alt_Menu_MiniKutu"><a href="https://www.nyarlko.com/youtube_arkaplan_indirici.html">YT Arkaplan</a></div>
+			</li>
+			<li>
+			<div class="alt_Menu_MiniKutu"><a href="https://www.nyarlko.com/haberler.html">Haberler</a></div>
+			</li>
+			<li>
+			<div class="alt_Menu_MiniKutu"><a href="https://www.nyarlko.com/yararli_linkler.html">Linkler</a></div>
+			</li>
+			<li>
+			<div class="alt_Menu_MiniKutu"><a href="https://github.com/ny4rlk0">Github</a></div>
+			</li>
+		</ul>
+	</div>-->
+		<div style="border: 0px solid rgb(201, 0, 1); overflow: hidden; margin: 0vw auto;">
+        <iframe scrolling="no" src="https://animecorner.me/category/news/anime-news/" style="border: 0px none; margin-left: 0px; height: 430vw; margin-top: 0 vw; margin-bottom: 0vw; width: 95vw;">
         </iframe>
-        </div><!-- 7 Ekim 2021 nyarlko ve 『z3r0tw0』 tarafından ❤ ile yazılmıştır! -->
-      </div>
-      <script>
-
-        </script> 
-<div class="alt_icerik"><h2>~Master Your IP address is :</h2>
- <iframe id="ip" src="https://api64.ipify.org/" width="260" height="60" frameborder="0"></iframe>
- <h6>『nyarlko』v1.2『❤』</h6></div>
+        </div>
+	<br>
+	<br>
+<div class="alt_Bilgi">
+ <!--<iframe class="ip" src="https://api64.ipify.org/" scrolling="no" frameborder="0"></iframe>-->
+	<div id="insertIP" class="kaykayAnimasyonu">『nyarlko』v2.0 Açık Beta『❤』2023 - <a href="nyarlko.com/tr.html">Türkçe</a> - <a href="nyarlko.com/en.html">English</a> - IP: </div> <!-- -『D』eep 『D』ive 『O』nline (Quest 2)-->
+	</div>
+	
+	<script>
+window.onload=ipGetDesu();
+function ipGetDesu(){
+	var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", "https://api64.ipify.org/", false ); // false for synchronous request
+    xmlHttp.send( null );
+	var insertIPHere = document.getElementById('insertIP');
+	if(xmlHttp.responseText){
+		insertIPHere.appendChild(document.createTextNode(xmlHttp.responseText));
+		console.log("window.onload=ipGetDesu(); metodu ip adresinizi ("+xmlHttp.responseText+") ipify.org adresinden başarıyla buldu!");
+	}
+}
+	</script>
 </body>
 </html>
