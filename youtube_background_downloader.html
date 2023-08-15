@@ -346,6 +346,18 @@ li:nth-child(100n) {
 	<div id="insertIP" class="kaykayAnimasyonu">『nyarlko』v2.0 Public Beta『❤』2023 - <a href="https://nyarlko.com/tr.html">Türkçe</a> - <a href="https://nyarlko.com/en.html">English</a> - IP: </div> <!-- -『D』eep 『D』ive 『O』nline (Quest 2)-->
 	</div>
 	
-	
+		<script>
+window.onload=ipGetDesu();
+function ipGetDesu(){
+	var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", "https://api64.ipify.org/", false ); // false for synchronous request
+    xmlHttp.send( null );
+	var insertIPHere = document.getElementById('insertIP');
+	if(xmlHttp.responseText){
+		insertIPHere.appendChild(document.createTextNode(xmlHttp.responseText));
+		console.log("window.onload=ipGetDesu(); metodu ip adresinizi ("+xmlHttp.responseText+") ipify.org adresinden başarıyla buldu!");
+	}
+}
+		</script>
 </body>
 </html>
